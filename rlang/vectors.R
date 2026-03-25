@@ -63,4 +63,9 @@ n <- 10
 1:n-1 # [1] 0 1 2 3 4 5 6 7 8 9
 1:(n-1) # [1] 1 2 3 4 5 6 7 8 9 (subtracts 1 from n first)
 
+# other ways to make vectors
+seq(from = 1, to = 10, by = 2) # [1] 1 3 5 7 9
+# seq(1, 10, 2) - shorthand
+
+rep(c(1, 13), 3) # repeat 3 times - # [1]  1 13  1 13  1 13
 
