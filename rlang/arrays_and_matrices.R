@@ -110,3 +110,6 @@ rbind(x, c(100, 100)) # row bind  (adds a new row)
 x <- matrix(c(1, 2), nrow = 2, byrow = T)
 rbind(x, c(100, 100, 100)) # recycling - wont add the last 2 100 values.
 
+# arrays (matrices with more than 2 dimensions)
+a <- array(seq(1, 18), dim = c(2, 3, 3))
+a
