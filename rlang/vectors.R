@@ -8,7 +8,10 @@ w[1]
 w[4]
 
 # colon indexing
+print("# Colon Indexing:")
 w[3:5]
+1:10 # [1]  1  2  3  4  5  6  7  8  9 10
+10:1 # [1] 10  9  8  7  6  5  4  3  2  1
 
 # booelan indexing
 w[
@@ -46,5 +49,18 @@ x <- c(1, 2, 3)
 y <- c(10, 11, 12, 13) # 13 gets the recycled 1 added
 
 x + y # how is R going to handle that the x vector is shorter than the y vector
+
+# generate a vector of zeros
+x <- vector("numeric", 10)
+x #  [1] 0 0 0 0 0 0 0 0 0 0
+
+# recycling 2. - fill a vector with values 1 & 2
+x[1:10] <- c(1, 2)
+x #  [1] 1 2 1 2 1 2 1 2 1 2
+
+# order of operation
+n <- 10
+1:n-1 # [1] 0 1 2 3 4 5 6 7 8 9
+1:(n-1) # [1] 1 2 3 4 5 6 7 8 9 (subtracts 1 from n first)
 
 
